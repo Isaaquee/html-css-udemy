@@ -1,0 +1,149 @@
+Curso de JavaScript e TypeScript do básico ao avançado 2021 - HTML/CSS 
+
+Começar.
+Seção 32: HTML5 e CSS3 (Para iniciantes)
+Seção 33: Landing Page com HTML5 e CSS3
+
+
+BACK-END - NODEJS com alguma base de dados, servidor de resposta, armazenar dados,
+FRONT-END - Navegador, botão, 
+
+Atalhos 
+
+ctrl+shift+p = comando "open with live server" ele vai ativar um servidor em uma determinada porta do meu computador e vai abrir a url do navegador
+ctrl+shift+i = formata o texto para validar na hora 
+paragrafo <p>
+http://127.0.0.1:5500/index.html
+
+127.0.0.1 - Localhost
+5500 - porta 
+index.html - o arquivo que esta sendo lido 
+
+
+Estrutura do HTML
+
+para a criação de um arquivo html devemos utilizando a extensão .html
+
+#Tag  "inicio <>" "Fim </>"
+
+Tags são estruturas de linguagem de marcação contendo instruções, tendo uma marca de início e outra de fim para que o navegador possa renderizar uma página. Há uma tendência nos dias atuais para se usar as tags apenas como delimitadores de estilo e/ou conteúdo, tanto em HTML quanto em XML.
+
+<br> - quebra de linha se usa no final 
+paragrafo <p></p>
+
+<b></b> negrito
+<i></i> - italico 
+<em></em> - e para palavra com enfase  
+<a href=""> </a> - para usar um link dentro do html
+href="" - é onde iremos inserir o link desejado 
+EXEMPLO:
+<a href="https://www.google.com/search?q=google+tradutor&rlz=1C1GCEA_enBR903BR903&oq=google&aqs=chrome.0.69i59j69i57j69i60l3j69i65l2j69i60.688j0j7&sourceid=chrome&ie=UTF-8">google tradutor</a>
+
+<strong></strong> - é para colocar uma palavra ou texto mais forte, tipo uma frase de atenção
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong
+
+
+#Atributo
+Vem normalmente na tag de abertura 
+
+lang - ajuda a definir o idioma de um elemento
+head - é a parte que não é exibida no navegador da web
+body - representa o conteúdo de um documento HTML
+meta charset=utf-8 - O charset UTF-8 é o que usamos na web atual e faz parte de um padrão chamado Unicode. A ideia é que com ele possamos representar qualquer caractere de qualquer idioma. Ao usar o charset dentro da tag meta de nosso arquivo estamos dizendo ao navegador: quando for ler esse arquivo, use as regras do charset UTF-8.
+title - defini o título do documento
+Para definir o ajuste da tela do celular - <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1> - titulo da pagina
+id="" - é única dentro da tag
+class="" - pode ser inserido diversas vezes nas tag 
+<style> - é uma tag para inserir css dentro do html 
+
+
+
+Para especificar um id dentro so style usamos a #
+Exemplo: 
+
+<style>
+#atencao {background: "cor"}
+</style>
+
+Caso queira especificar um class para todo o contexto, tudo que tiver o class fundo vermelho ira ficar rosa
+<style>
+.fundo-vermelho {
+			color: pink;
+			}
+</style>
+
+Exemplo:
+
+<escreve atributo="valor1 valor2">      "Abertura"
+</escreve>      						"Fechamento"
+#Esse h1 é unico não podemos criar duas tag iguais com id 
+<h1 id="cabecalho-um" class="fundo vermelho borde-esquerda">
+
+
+<html lang="pt-BR">
+
+
+#expecificação de criação do HTML5 para o navegador saber se iremos utilizar o HTML5
+<!doctype html>
+
+#Criação 
+Para iniciar sempre vamos começar com 
+
+<html>
+</html>
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">  
+    <title>Meu HTML</title>
+  </head>
+  <body>
+    <p>Aprendendo HTML</p>     
+  </body>
+</html>
+
+#Validador de teste do nosso HTML 
+https://validator.w3.org/nu/#textarea
+
+
+Para não precisar sempre criar a estrutura inicial do HTML, podemos executar o comando ! que ira criar a estrutura inicial segue exemplo:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+#Modelo que utilizei na última aula
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+</head>
+<body>
+    <h1>Meu HTML</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde vitae tenetur ipsam placeat pariatur amet. Iusto itaque culpa fugit optio quasi id officia distinctio a atque, velit deleniti assumenda.</p>
+</body>
+</html>
+
+heading - são tag de cabeçalho, podemos o tamanho do titulo e os demais subtitulos
+
+h1 
+h2
+h3
+h4
+h5
+h6
